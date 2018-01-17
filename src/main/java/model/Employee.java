@@ -24,6 +24,9 @@ public class Employee extends BaseEntity {
     @OneToOne
     private Position position;
     @NonNull
+    @OneToOne
+    private Payment payment;
+    @NonNull
     private String login;
     @NonNull
     private String password;

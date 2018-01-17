@@ -14,4 +14,6 @@ public interface Dao<T extends BaseEntity> {
     void save(T dataSet);
 
     void update(T dataSet);
+
+    void delete(T dataSet);
 }

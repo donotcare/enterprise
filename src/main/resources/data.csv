@@ -1,0 +1,9 @@
+Name,City,Department,Position,Payment,Login,Password
+Alexey,Moscow,Accounting,Accountant,500,login,password
+Mikhail,Moscow,Accounting,Accountant,500,login,password
+Oleg,Moscow,HR,HR-manager,1500,login,password
+Olga,Moscow,HR,HR-manager,1500,login,password
+Maxim,Moscow,Common,manager,500,login,password
+Tatyana,Moscow,Common,manager,500,login,password
+Regina,Moscow,Common,senoir manager,5000,login,password
+Georgy,Piter,Common,manager,500,login,password

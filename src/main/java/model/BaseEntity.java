@@ -1,5 +1,6 @@
 package model;
 
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;
 
@@ -10,6 +11,7 @@ import javax.persistence.MappedSuperclass;
 import java.util.Objects;
 
 @MappedSuperclass
+@EqualsAndHashCode
 @Getter
 @ToString
 public abstract class BaseEntity {

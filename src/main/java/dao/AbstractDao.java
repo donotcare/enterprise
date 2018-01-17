@@ -4,6 +4,7 @@ package dao;
 import model.BaseEntity;
 import org.hibernate.Criteria;
 import org.hibernate.Session;
+import org.hibernate.Transaction;
 
 import java.lang.reflect.ParameterizedType;
 import java.util.List;
@@ -23,7 +24,17 @@ public class AbstractDao<T extends BaseEntity> implements Dao<T> {
     }
 
     public void update(T dataSet) {
+        Transaction tx = session.beginTransaction();
         session.merge(dataSet);
+        tx.commit();
+    }
+
+    @Override
+    public void delete(T dataSet) {
+        Transaction tx = session.beginTransaction();
+        session.delete(dataSet);
+
+        tx.commit();
     }
 
     public T read(long id) {

@@ -25,6 +25,14 @@ public abstract class AbstractDbService<T extends BaseEntity> implements DbServi
         }
     }
 
+    @Override
+    public void delete(T dataSet) {
+        try (Session session = DBConfigHibernate.getSession()) {
+            Dao<T> dao = getDao(session);
+            dao.delete(dataSet);
+        }
+    }
+
     public T read(long id) {
         return runInSession(session -> {
             Dao<T> dao = getDao(session);

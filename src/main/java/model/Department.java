@@ -3,7 +3,6 @@ package model;
 import lombok.*;
 
 import javax.persistence.Entity;
-@EqualsAndHashCode(callSuper = true)
 @RequiredArgsConstructor
 @NoArgsConstructor
 @Getter
