@@ -4,6 +4,9 @@ import lombok.*;
 
 import javax.persistence.Entity;
 import javax.persistence.OneToOne;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlRootElement;
 
 
 @RequiredArgsConstructor
@@ -12,6 +15,8 @@ import javax.persistence.OneToOne;
 @Setter
 @Entity
 @ToString(callSuper = true)
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlRootElement(name = "employee")
 public class Employee extends BaseEntity {
     @NonNull
     private String name;
