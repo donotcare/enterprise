@@ -60,6 +60,11 @@ nav li {
     color: #b2b2b2;
 }
 
+main {
+    max-width: 960px;
+    margin: 20px;
+}
+
 aside {
     float: right;
     width: 250px;
