@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Enterprise</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+<body>
+<div w3-include-html="header.html"></div>
+<div w3-include-html="aside.html"></div>
+<main>
+    <form name="auth" action="#" method="get">
+        <div class="form__field">
+            <input type="text" name="q" placeholder="login" required>
+        </div>
+        <div class="form__field">
+            <input type="text" name="q" placeholder="password" minlength="6" maxlength="12" required>
+            <span class="form__error">Пароль должен быть от 6 до 12 символов</span>
+        </div>
+        <button type="submit">Войти</button>
+    </form>
+</main>
+<div w3-include-html="footer.html"></div>
+</body>
+<script>
+    w3.includeHTML();
+</script>
+</html>
